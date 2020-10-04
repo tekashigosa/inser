@@ -1,0 +1,18 @@
+type
+tab=array[0..50] of integer;
+var
+i,j,n,v:integer;
+t:tab;
+begin;
+for i from 2 to n do
+begin
+v:=t[i];
+j:=i;
+while(t[j-1]>v) do
+begin
+t[j]:=t[j-1];
+j:=j-1;
+end;
+t[j]:=v
+end;
+end.
